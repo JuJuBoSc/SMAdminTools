@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{32C6AE33-FB10-4A02-8398-0D30807B7B4F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>IRCBot</RootNamespace>
+    <AssemblyName>IRCBot</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\SMAdminTools\bin\Release\Plugins</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\SMAdminTools\bin\Release\Plugins</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="Meebey.SmartIrc4net">
+      <HintPath>Libs\Meebey.SmartIrc4net.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="IRCBot.cs" />
+    <Compile Include="Classes\IRCBotSettings.cs" />
+    <Compile Include="IRCBot.Parser.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <Folder Include="Libs\" />
+    <Folder Include="Classes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Libs\Meebey.SmartIrc4net.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ShootManiaXMLRPC\ShootManiaXMLRPC.csproj">
+      <Project>{3B12CB3A-A474-4CE3-8C13-A357CEF42F54}</Project>
+      <Name>ShootManiaXMLRPC</Name>
+      <Private>False</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\SMAdminTools\SMAdminTools.csproj">
+      <Project>{3AB7196B-6387-42D4-A03F-265F4E616546}</Project>
+      <Name>SMAdminTools</Name>
+      <Private>False</Private>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SMAdminTools", "SMAdminTools\SMAdminTools.csproj", "{3AB7196B-6387-42D4-A03F-265F4E616546}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShootManiaXMLRPC", "ShootManiaXMLRPC\ShootManiaXMLRPC.csproj", "{3B12CB3A-A474-4CE3-8C13-A357CEF42F54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IGAdmin", "IGAdmin\IGAdmin.csproj", "{34EACBCA-D2AC-4C03-B932-8E3E492DCABC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRCBot", "IRCBot\IRCBot.csproj", "{32C6AE33-FB10-4A02-8398-0D30807B7B4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{32C6AE33-FB10-4A02-8398-0D30807B7B4F}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{32C6AE33-FB10-4A02-8398-0D30807B7B4F}.Debug|x86.Build.0 = Debug|Any CPU
+		{32C6AE33-FB10-4A02-8398-0D30807B7B4F}.Release|x86.ActiveCfg = Release|Any CPU
+		{32C6AE33-FB10-4A02-8398-0D30807B7B4F}.Release|x86.Build.0 = Release|Any CPU
+		{34EACBCA-D2AC-4C03-B932-8E3E492DCABC}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{34EACBCA-D2AC-4C03-B932-8E3E492DCABC}.Debug|x86.Build.0 = Debug|Any CPU
+		{34EACBCA-D2AC-4C03-B932-8E3E492DCABC}.Release|x86.ActiveCfg = Release|Any CPU
+		{34EACBCA-D2AC-4C03-B932-8E3E492DCABC}.Release|x86.Build.0 = Release|Any CPU
+		{3AB7196B-6387-42D4-A03F-265F4E616546}.Debug|x86.ActiveCfg = Debug|x86
+		{3AB7196B-6387-42D4-A03F-265F4E616546}.Debug|x86.Build.0 = Debug|x86
+		{3AB7196B-6387-42D4-A03F-265F4E616546}.Release|x86.ActiveCfg = Release|x86
+		{3AB7196B-6387-42D4-A03F-265F4E616546}.Release|x86.Build.0 = Release|x86
+		{3B12CB3A-A474-4CE3-8C13-A357CEF42F54}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3B12CB3A-A474-4CE3-8C13-A357CEF42F54}.Debug|x86.Build.0 = Debug|Any CPU
+		{3B12CB3A-A474-4CE3-8C13-A357CEF42F54}.Release|x86.ActiveCfg = Release|Any CPU
+		{3B12CB3A-A474-4CE3-8C13-A357CEF42F54}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = SMAdminTools\SMAdminTools.csproj
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.StandardHeader = $2
+		$2.Text = 
+		$2.IncludeInNewFiles = True
+	EndGlobalSection
+EndGlobal
